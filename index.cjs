@@ -68,105 +68,105 @@ module.exports = {
     },
     fontSize: {
       xs: [
-        `var(--font-size-xs, ${defaultTheme.fontSize.xs})`,
+        `var(--font-size-xs, ${defaultTheme.fontSize.xs[0]})`,
         {
           lineHeight: `var(--line-height-xs, ${defaultTheme.lineHeight.normal})`,
         },
       ],
       sm: [
-        `var(--font-size-sm, ${defaultTheme.fontSize.sm})`,
+        `var(--font-size-sm, ${defaultTheme.fontSize.sm[0]})`,
         {
-          lineHeight: `var(--line-height-sm, ${defaultTheme.lineHeight.normal}))`,
+          lineHeight: `var(--line-height-sm, ${defaultTheme.lineHeight.normal})`,
         },
       ],
       base: [
-        `var(--font-size-base, ${defaultTheme.fontSize.base})`,
+        `var(--font-size-base, ${defaultTheme.fontSize.base[0]})`,
         {
-          lineHeight: `var(--line-height-md, ${defaultTheme.lineHeight.normal}))`,
+          lineHeight: `var(--line-height-md, ${defaultTheme.lineHeight.normal})`,
         },
       ],
       lg: [
-        `var(--font-size-lg, ${defaultTheme.fontSize.lg})`,
+        `var(--font-size-lg, ${defaultTheme.fontSize.lg[0]})`,
         {
-          lineHeight: `var(--line-height-lg, ${defaultTheme.lineHeight.normal}))`,
+          lineHeight: `var(--line-height-lg, ${defaultTheme.lineHeight.normal})`,
         },
       ],
       xl: [
-        `var(--font-size-xl, ${defaultTheme.fontSize.xl})`,
+        `var(--font-size-xl, ${defaultTheme.fontSize.xl[0]})`,
         {
-          lineHeight: `var(--line-height-xl, ${defaultTheme.lineHeight.normal}))`,
+          lineHeight: `var(--line-height-xl, ${defaultTheme.lineHeight.normal})`,
         },
       ],
       "2xl": [
-        `var(--font-size-2xl, ${defaultTheme.fontSize["2xl"]})`,
+        `var(--font-size-2xl, ${defaultTheme.fontSize["2xl"][0]})`,
         {
-          lineHeight: `var(--line-height-2xl, ${defaultTheme.lineHeight.normal}))`,
+          lineHeight: `var(--line-height-2xl, ${defaultTheme.lineHeight.normal})`,
         },
       ],
       "3xl": [
-        `var(--font-size-3xl, ${defaultTheme.fontSize["3xl"]})`,
+        `var(--font-size-3xl, ${defaultTheme.fontSize["3xl"][0]})`,
         {
-          lineHeight: `var(--line-height-3xl, ${defaultTheme.lineHeight.normal}))`,
+          lineHeight: `var(--line-height-3xl, ${defaultTheme.lineHeight.normal})`,
         },
       ],
       "4xl": [
-        `var(--font-size-4xl, ${defaultTheme.fontSize["4xl"]})`,
+        `var(--font-size-4xl, ${defaultTheme.fontSize["4xl"][0]})`,
         {
-          lineHeight: `var(--line-height-4xl, ${defaultTheme.lineHeight.normal}))`,
+          lineHeight: `var(--line-height-4xl, ${defaultTheme.lineHeight.normal})`,
         },
       ],
       "5xl": [
-        `var(--font-size-5xl, ${defaultTheme.fontSize["5xl"]})`,
+        `var(--font-size-5xl, ${defaultTheme.fontSize["5xl"][0]})`,
         {
-          lineHeight: `var(--line-height-5xl, ${defaultTheme.lineHeight.normal}))`,
+          lineHeight: `var(--line-height-5xl, ${defaultTheme.lineHeight.normal})`,
         },
       ],
       "6xl": [
-        `var(--font-size-6xl, ${defaultTheme.fontSize["6xl"]})`,
+        `var(--font-size-6xl, ${defaultTheme.fontSize["6xl"][0]})`,
         {
-          lineHeight: `var(--line-height-6xl, ${defaultTheme.lineHeight.normal}))`,
+          lineHeight: `var(--line-height-6xl, ${defaultTheme.lineHeight.normal})`,
         },
       ],
       "7xl": [
-        `var(--font-size-7xl, ${defaultTheme.fontSize["7xl"]})`,
+        `var(--font-size-7xl, ${defaultTheme.fontSize["7xl"][0]})`,
         {
-          lineHeight: `var(--line-height-7xl, ${defaultTheme.lineHeight.normal}))`,
+          lineHeight: `var(--line-height-7xl, ${defaultTheme.lineHeight.normal})`,
         },
       ],
       "8xl": [
-        `var(--font-size-8xl, ${defaultTheme.fontSize["8xl"]})`,
+        `var(--font-size-8xl, ${defaultTheme.fontSize["8xl"][0]})`,
         {
-          lineHeight: `var(--line-height-8xl, ${defaultTheme.lineHeight.normal}))`,
+          lineHeight: `var(--line-height-8xl, ${defaultTheme.lineHeight.normal})`,
         },
       ],
       "9xl": [
-        `var(--font-size-9xl, ${defaultTheme.fontSize["9xl"]})`,
+        `var(--font-size-9xl, ${defaultTheme.fontSize["9xl"][0]})`,
         {
-          lineHeight: `var(--line-height-9xl, ${defaultTheme.lineHeight.normal}))`,
+          lineHeight: `var(--line-height-9xl, ${defaultTheme.lineHeight.normal})`,
         },
       ],
       "10xl": [
-        `var(--font-size-10xl, ${defaultTheme.fontSize["10xl"] ?? ""})`,
+        `var(--font-size-10xl, ${defaultTheme.fontSize["9xl"][0]})`,
         {
-          lineHeight: `var(--line-height-10xl, ${defaultTheme.lineHeight.normal}))`,
+          lineHeight: `var(--line-height-10xl, ${defaultTheme.lineHeight.normal})`,
         },
       ],
       "11xl": [
-        `var(--font-size-11xl, ${defaultTheme.fontSize["11xl"] ?? ""})`,
+        `var(--font-size-11xl, ${defaultTheme.fontSize["9xl"][0]})`,
         {
-          lineHeight: `var(--line-height-11xl, ${defaultTheme.lineHeight.normal}))`,
+          lineHeight: `var(--line-height-11xl, ${defaultTheme.lineHeight.normal})`,
         },
       ],
       "12xl": [
-        `var(--font-size-12xl, ${defaultTheme.fontSize["12xl"] ?? ""})`,
+        `var(--font-size-12xl, ${defaultTheme.fontSize["9xl"][0]})`,
         {
-          lineHeight: `var(--line-height-12xl, ${defaultTheme.lineHeight.normal}))`,
+          lineHeight: `var(--line-height-12xl, ${defaultTheme.lineHeight.normal})`,
         },
       ],
       "13xl": [
-        `var(--font-size-13xl, ${defaultTheme.fontSize["13xl"] ?? ""})`,
+        `var(--font-size-13xl, ${defaultTheme.fontSize["9xl"][0]})`,
         {
-          lineHeight: `var(--line-height-13xl, ${defaultTheme.lineHeight.normal}))`,
+          lineHeight: `var(--line-height-13xl, ${defaultTheme.lineHeight.normal})`,
         },
       ],
     },
