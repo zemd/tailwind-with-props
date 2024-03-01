@@ -7,8 +7,9 @@ const transformColorObject = (colors, prefix = "") => {
       acc[key] = `var(${propName}, ${value})`;
     }
     if (typeof value === "object") {
-      return transformColorObject(value, `${prefix}${key}-`);
+      acc[key] = transformColorObject(value, `${prefix}${key}-`);
     }
+    return acc;
   }, {});
 };
 
