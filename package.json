@@ -1,11 +1,18 @@
 {
   "name": "@zemd/tailwind-with-props",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "commonjs",
   "main": "index.cjs",
   "license": "Apache-2.0",
   "description": "A Tailwind preset that maps theme config options to CSS custom properties",
-  "keywords": ["tailwindcss", "css", "custom properties", "css variables", "theme", "preset"],
+  "keywords": [
+    "tailwindcss",
+    "css",
+    "custom properties",
+    "css variables",
+    "theme",
+    "preset"
+  ],
   "author": {
     "name": "Dmytro Zelenetskyi",
     "email": "dmytro.zelenetskyi@gmail.com",
