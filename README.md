@@ -1,5 +1,7 @@
 # @zemd/tailwind-with-props
 
+[![npm](https://img.shields.io/npm/v/@zemd/tailwind-with-props?color=0000ff&label=npm&labelColor=000)](https://npmjs.com/package/@zemd/tailwind-with-props)
+
 This is a simple Tailwindcss preset that maps theme options with css props. This allows you to 
 configure theme from within your `global.css` file.
 
