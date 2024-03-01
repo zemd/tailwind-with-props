@@ -5,8 +5,7 @@ const transformColorObject = (colors, prefix = "") => {
   if (!colors) return {};
   return Object.entries(colors).reduce((acc, [key, value]) => {
     if (typeof value === "string") {
-      const prefixWithDash = prefix ? `${prefix}-` : "";
-      const propName = `--color-${prefixWithDash}${key}`;
+      const propName = `--color-${prefix}${key}`;
       acc[key] = `var(${propName}, ${value})`;
     }
     if (typeof value === "object") {
