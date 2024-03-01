@@ -1,5 +1,11 @@
 # @zemd/tailwind-with-props
 
+## 0.0.3
+
+### Patch Changes
+
+- c021232: using defaultTheme instead of defaultConfig
+
 ## 0.0.2
 
 ### Patch Changes
