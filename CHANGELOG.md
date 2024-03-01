@@ -1,5 +1,11 @@
 # @zemd/tailwind-with-props
 
+## 0.0.4
+
+### Patch Changes
+
+- 08af8d4: fixing font-size
+
 ## 0.0.3
 
 ### Patch Changes
