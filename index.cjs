@@ -1,4 +1,5 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
+const defaultColors = require('tailwindcss/colors');
 
 const transformColorObject = (colors, prefix = "") => {
   if (!colors) return {};
@@ -15,7 +16,7 @@ const transformColorObject = (colors, prefix = "") => {
   }, {});
 };
 
-const colors = transformColorObject(defaultTheme.colors);
+const colors = transformColorObject(defaultColors);
 
 module.exports = {
   content: [],
