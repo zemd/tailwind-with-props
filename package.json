@@ -1,6 +1,6 @@
 {
   "name": "@zemd/tailwind-with-props",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "type": "commonjs",
   "main": "index.cjs",
   "license": "Apache-2.0",
