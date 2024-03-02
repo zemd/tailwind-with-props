@@ -49,6 +49,9 @@ pnpm add @zemd/tailwind-with-props --dev
 | letter-spacing | `--letter-spacing-{1-6}` | |
 | line-height | `--line-height-{1-17}`, <br/> `--line-height-short-{1-17}` | `--line-height-none`, <br/> `--line-height-tight`, <br/> `--line-height-snug`, <br/> `--line-height-normal`, <br/> `--line-height-relaxed`, <br/> `--line-height-loose` |
 
+As you can notice there are some additional props that can be used. I added them intentionally to
+increase a functionality for the theme. But if you do not use them, you can simply ignore them.
+
 ## Configuring color palette
 
 In some cases, you might want to configure how you want to name your colors. For example, 
