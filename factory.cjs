@@ -17,7 +17,7 @@ module.exports = (opts = {}) => {
         acc[key] = `var(${propName}, ${value})`;
       }
       if (typeof value === "object") {
-        acc[key] = transformColorObject(value, `${prefix}${key}-`, options.useTailwindColorOrder);
+        acc[key] = transformColorObject(value, `${prefix}${key}-`, !options.useTailwindColorOrder);
       }
       return acc;
     }, {});
