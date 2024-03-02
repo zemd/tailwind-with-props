@@ -27,7 +27,8 @@
     "url": "https://github.com/zemd/tailwind-with-props/issues"
   },
   "files": [
-    "index.cjs"
+    "index.cjs",
+    "factory.cjs"
   ],
   "exports": {
     ".": {
