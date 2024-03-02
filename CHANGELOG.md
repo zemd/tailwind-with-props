@@ -1,5 +1,11 @@
 # @zemd/tailwind-with-props
 
+## 0.0.9
+
+### Patch Changes
+
+- 9f51373: bump version
+
 ## 0.0.8
 
 ### Patch Changes
