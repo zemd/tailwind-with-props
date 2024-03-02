@@ -1,5 +1,11 @@
 # @zemd/tailwind-with-props
 
+## 0.0.6
+
+### Patch Changes
+
+- c7b263a: fixing colors
+
 ## 0.0.5
 
 ### Patch Changes
