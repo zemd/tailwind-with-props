@@ -1,5 +1,11 @@
 # @zemd/tailwind-with-props
 
+## 0.0.7
+
+### Patch Changes
+
+- 2aa9248: adding factory method for configuring the preset
+
 ## 0.0.6
 
 ### Patch Changes
