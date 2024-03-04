@@ -9,6 +9,10 @@ module.exports = (opts = {}) => {
       return {};
     }
     return Object.entries(colors).reduce((acc, [key, value], index) => {
+      if (["lightBlue", "warmGray", "trueGray", "coolGray", "blueGray"].includes(key)) {
+        // skipping deprecated colors
+        return acc;
+      }
       if (typeof value === "string") {
         let propName = `--color-${prefix}${key}`;
         if (`${parseInt(key)}` === key && useIndexes) {
