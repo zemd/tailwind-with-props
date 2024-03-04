@@ -1,5 +1,11 @@
 # @zemd/tailwind-with-props
 
+## 0.0.10
+
+### Patch Changes
+
+- f8ac4d2: avoid deprecated colors
+
 ## 0.0.9
 
 ### Patch Changes
