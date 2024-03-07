@@ -1,6 +1,8 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 const defaultColors = require("tailwindcss/colors");
 
+const deprecatedColors = ["lightBlue", "warmGray", "trueGray", "coolGray", "blueGray"];
+
 module.exports = (opts = {}) => {
   const options = { useTailwindColorOrder: true, ...opts };
 
@@ -9,7 +11,7 @@ module.exports = (opts = {}) => {
       return {};
     }
     return Object.entries(colors).reduce((acc, [key, value], index) => {
-      if (["lightBlue", "warmGray", "trueGray", "coolGray", "blueGray"].includes(key)) {
+      if (deprecatedColors.includes(key)) {
         // skipping deprecated colors
         return acc;
       }
@@ -26,7 +28,9 @@ module.exports = (opts = {}) => {
       return acc;
     }, {});
   };
-
+  deprecatedColors.forEach((color) => {
+    delete defaultColors[color];
+  });
   const colors = transformColorObject(defaultColors, "", false);
 
   return {
@@ -362,7 +366,9 @@ module.exports = (opts = {}) => {
           19: `var(--line-height-short-17, ${defaultTheme.lineHeight.normal})`,
         },
       },
-      colors,
+      extend: {
+        colors,
+      }
     },
   };
 };
