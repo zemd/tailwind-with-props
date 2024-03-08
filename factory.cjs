@@ -58,7 +58,7 @@ module.exports = (opts = {}) => {
         8: `var(--border-8, ${defaultTheme.borderWidth[8]})`,
       },
       boxShadow: {
-        none: "none",
+        none: "var(--shadow-none, none)",
         inner: `var(--shadow-inner-1, ${defaultTheme.boxShadow.inner})`,
         DEFAULT: `var(--shadow-default, ${defaultTheme.boxShadow.DEFAULT})`,
         sm: `var(--shadow-1, ${defaultTheme.boxShadow.sm})`,
