@@ -4,7 +4,7 @@ const defaultColors = require("tailwindcss/colors");
 const deprecatedColors = ["lightBlue", "warmGray", "trueGray", "coolGray", "blueGray"];
 
 module.exports = (opts = {}) => {
-  const options = { useTailwindColorOrder: true, ...opts };
+  const options = { useTailwindColorOrder: true, colorIndexMultiplier: 1, ...opts };
 
   const transformColorObject = (colors, prefix, useIndexes = false) => {
     if (!colors) {
@@ -18,7 +18,8 @@ module.exports = (opts = {}) => {
       if (typeof value === "string") {
         let propName = `--color-${prefix}${key}`;
         if (`${parseInt(key)}` === key && useIndexes) {
-          propName = `--color-${prefix}${index}`;
+          const ind = index * options.colorIndexMultiplier;
+          propName = `--color-${prefix}${ind}`;
         }
         acc[key] = `var(${propName}, ${value})`;
       }
@@ -53,6 +54,7 @@ module.exports = (opts = {}) => {
         px: "var(--border-px, 1px)",
         DEFAULT: "var(--border-default, 1px)",
         0: `var(--border-0, ${defaultTheme.borderWidth[0]})`,
+        1: `var(--border-px, ${defaultTheme.borderWidth["DEFAULT"]})`,
         2: `var(--border-2, ${defaultTheme.borderWidth[2]})`,
         4: `var(--border-4, ${defaultTheme.borderWidth[4]})`,
         8: `var(--border-8, ${defaultTheme.borderWidth[8]})`,
@@ -368,7 +370,7 @@ module.exports = (opts = {}) => {
       },
       extend: {
         colors,
-      }
+      },
     },
   };
 };
