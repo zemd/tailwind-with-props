@@ -1,5 +1,11 @@
 # @zemd/tailwind-with-props
 
+## 0.0.13
+
+### Patch Changes
+
+- 19fe8a5: adding colorIndexMultiplier for generating color indexes
+
 ## 0.0.12
 
 ### Patch Changes
