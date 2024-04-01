@@ -1,5 +1,11 @@
 # @zemd/tailwind-with-props
 
+## 0.0.12
+
+### Patch Changes
+
+- 0c0ee9a: using --shadow-none variable for none shadow theme prop
+
 ## 0.0.11
 
 ### Patch Changes
